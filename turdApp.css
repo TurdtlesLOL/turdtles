@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+	word-break: break-word;
+	line-height: 1.5rem;
+	font-size: 15px;
+}
+
+:root {
+	--c-green: #AF6E4D;
+	--c-pink: #ff1493;
+	--c-purple: #8DB600;
+	--c-lilac: #03C03C;
+	--c-white: #E8E8E8;
+	--c-greenish: #C7FF66;
+	--c-green-neon: #ACFF3F;
+	--c-pinkish: #FF66C1;
+	--c-light-pink: #FEAAFF;
+      --d1: 320.54deg;
+    --d2: 58.72deg;
+    --d3: 121.28deg;
+    --d4: 180deg;
+    --d5: 52.23deg;
+    --d6: 121.28deg;
+    --d7: 50% 72.12% at 50% 50%;
+    --d8: 72.37%;
+    --p1: 0%;
+    --p2: 100%;
+    --p3: .5%;
+    --blend-one: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge;
+    --blend-two: screen, color-dodge, color-burn, screen, overlay, difference;
+    --no-blend: inherit;
+
+    --c1: #DD2107;
+    --c2: #1CEE8F;
+    --c3: #964371;
+    --c4: #73526F;
+    --c5: #8299D6;
+    --c6: #08FD80;
+    --c7: #991FC2;
+    --c8: #2F41D7;
+    --c9: #62C8E0;
+    --c10: #A5CC34;
+    --c11: #08C760;
+    --c12: #E65F86;
+    --c13: #49828C;
+    --c14: #85AA5E;
+    --c15: #098BD6;
+    --c16: #F923D6;
+    --c17: #149590;
+    --c18: #C009E3;
+    --c19: #A348B0;
+    --c20: #5407E8;
+}
+
+body {
+    background: linear-gradient(44deg, #7B3F00 31%, #8DB600 71%, #03C03C 100%);
+    
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: none;
+    background-size: cover;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+	/*background-size: cover;*/
+	height: 1400px;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+section {
+	font-family: 'Michroma';
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	font-weight: 900;
+	gap: 50px;
+}
+
+.dashboard, .tabcontent {
+	width: 100%;
+	height: fit-content;
+	background-color: var(--c-white);
+	border: 2px solid black;
+}
+
+.window-bar, .item-bar {
+	background-color: var(--c-lilac);
+	border: 2px solid black;
+	margin: 4px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 14px;
+	height: 35px;
+	padding: 2px 4px;
+}
+
+.window-bar button, .item-bar span {
+	text-align: center;
+	width: 30px;
+	height: 25px;
+	background-color: var(--c-green);
+	border: 2px solid black;
+	cursor: pointer;
+  color: white;
+}
+
+.profile {
+	margin: 8px;
+	text-align: center;
+}
+
+.profile img {
+  width: 44px;
+}
+
+.pooList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title {
+/* 	background-image: radial-gradient(circle, rgba(255,102,193,1) 16%, rgba(246,168,255,1) 44%, rgba(150,138,255,1) 77%); */
+	color: var(--c-green);
+/* 	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent; */
+	text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.82);
+	font-family: 'Orbitron';
+	line-height: 3rem;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.tabs {
+    display: block;
+		margin: 8px;
+}
+
+.tabs > * {
+   padding: 1rem;
+}
+
+.tab {
+		font-family: 'Michroma';
+    display: inline-block;
+	  width: 100%;
+    background: var(--c-green);
+    padding: 10px 15px;
+	  font-size: 15px;
+    cursor: pointer;
+	 	margin-bottom: 5px;
+}
+
+.tabs button.active {
+  background-color: var(--c-purple);
+}
+
+
+.tabs button {
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+	font-weight: 400;
+}
+
+.inside {
+	margin: 10px;
+}
+
+@media (max-width: 500px) {
+	.window-bar, .item-bar {
+		height: 50px;
+	}
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+				gap: 5px;
+    }
+		
+		.tab {
+				margin-bottom: 0;
+		}
+}
+
+
+
+
+/* Dookie Rain */
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+}
+
+
+.dookieRain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#gameArea {
+    width: 600px;
+    height: 400px;
+    background-image: url('./assets/mettallo.png');
+    background-size: cover;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+#catcher {
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    bottom: 0;
+    left: 275px; /* Center the catcher */
+    /*background-color: blue;*/
+    background-image: url('./assets/Turdtle-copy.png');
+    background-size: cover;
+}
+
+.falling-object {
+    width: 44px;
+    height: 44px;
+    /*background-color: red;*/
+    background-image: url('./assets/poop2.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+#gameInfo {
+  display: flex;
+  flex-direction: row;
+  /*jusify-content: center;*/
+  gap: 22px;
+}
+
+.level-up-message {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 44px;
+    font-weight: bold;
+    z-index: 100;
+    /*background-color: rgba(0, 0, 0, 0.75);*/
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+//coloring
+
+.cBook {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coloring {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#color-picker {
+    margin-top: 20px;
+}
+
+#canvas-container {
+    margin-top: 20px;
+   
+}
+
+canvas {
+    border: 2px solid #000;
+}
+
+.rMap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.bout {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.memeImg {
+
+  width: 111px;
+}

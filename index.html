@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VyBApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Goldman:wght@400;700&family=Michroma&family=Orbitron:wght@400;600;800;900&family=Zen+Dots&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="turdApp.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<section>
+		<div class="dashboard">
+			<div class="window-bar">
+				<p>turtles.lol</p>
+				<button>X</button>
+			</div>
+
+			<div class="profile">
+				<h2 class="title">Turdtle Time!!</h2>
+				<img src="./assets/X_logo_made_out_of_2_turds.png" alt="Twitter" />
+				<p class="text">They said we were shit, but now, we are winning the race!!!!</p> 
+			</div>
+
+			<div class="tabs">
+				<!--<button class="tab" onclick="openCity(event, 'List')">Files</button>-->
+				<button class="tab" onclick="openCity(event, 'Files')">Shit List</button>
+				<button class="tab" onclick="openCity(event, 'MakeVybrz')">Turdmap</button>
+				<!--<button class="tab" onclick="openCity(event, 'Gen')">Gen</button>-->
+				<button class="tab" onclick="openCity(event, 'Challenges')">Challenges</button>
+				<button class="tab" onclick="openCity(event, 'Activity-feed')">Activities</button>
+			</div>
+		</div>
+
+		<div id="List" class="tabcontent">
+			<div class="item-bar">
+				<h3>Shit List</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			
+			<div class="inside">
+				
+				<h2>Submit the form below for a chance to get on the Shit List.</h2>
+
+				<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?3.3.48134" type="text/javascript"></script>
+				<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?3.3.48134" type="text/javascript"></script>
+				<script src="https://cdn02.jotfor.ms/js/vendor/imageinfo.js?v=3.3.48134" type="text/javascript"></script>
+				<script src="https://cdn03.jotfor.ms/file-uploader/fileuploader.js?v=3.3.48134"></script>
+				<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.48134" type="text/javascript"></script>
+				
+				<script type="text/javascript">	JotForm.newDefaultTheme = true;
+					JotForm.extendsNewTheme = false;
+					JotForm.singleProduct = false;
+					JotForm.newPaymentUIForNewCreatedForms = true;
+					JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+					JotForm.newPaymentUI = true;
+					JotForm.replaceTagTest = true;
+					JotForm.clearFieldOnHide="disable";
+					JotForm.submitError="jumpToFirstError";
+					window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":233311925904049,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true})});	JotForm.isFullSource = true;
+
+					JotForm.init(function(){
+					/*INIT-START*/
+				if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);
+				if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
+					JotForm.alterTexts(undefined);
+					setTimeout(function() {
+						JotForm.initMultipleUploads();
+					}, 2);
+					/*INIT-END*/
+					});
+
+				setTimeout(function() {
+				JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"xScreen","qid":"3","subLabel":"","text":"X Screen name:","type":"control_textbox"},{"description":"","name":"ethWallet","qid":"4","subLabel":"","text":"ETH Wallet Address:","type":"control_textbox"},{"description":"","name":"screenshotYour","qid":"5","subLabel":"","text":"Screenshot Your Highest Dookie Rain Score, post it to  X & submit screenshot here:","type":"control_fileupload"},{"description":"","name":"turdtleMeme","qid":"6","subLabel":"Extra points if you use our Meme Gen ","text":"Turdtle Meme Submission:","type":"control_fileupload"}]);}, 20); 
+				</script>
+				<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/form-common.css?v=639da40
+				"/>
+				<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+				<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.48134"/>
+				<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.48134" />
+				<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.48134" />
+				<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/donationBox.css?v=3.3.48134">
+				<style type="text/css" id="form-designer-style">
+					/* Injected CSS Code */
+				.form-label.form-label-auto {
+						
+						display: inline-block;
+						float: left;
+						text-align: right;
+					
+					}
+					/* Injected CSS Code */
+				</style>
+
+				<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/233311925904049" method="post" enctype="multipart/form-data" name="form_233311925904049" id="233311925904049" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="233311925904049" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1701164951731" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1701164951731" />
+				<div role="main" class="form-all">
+					<ul class="form-section page-section">
+					<li id="cid_1" class="form-input-wide" data-type="control_head">
+						<div class="form-header-group  header-large">
+						<div class="header-text httal htvam">
+							<h1 id="header_1" class="form-header" data-component="header">Form</h1>
+						</div>
+						</div>
+					</li>
+					<li class="form-line jf-required" data-type="control_textbox" id="id_3"><label class="form-label form-label-right form-label-auto" id="label_3" for="input_3" aria-hidden="false"> X Screen name:<span class="form-required">*</span> </label>
+						<div id="cid_3" class="form-input jf-required" data-layout="half"> <input type="text" id="input_3" name="q3_xScreen" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_3" required="" value="" /> </div>
+					</li>
+					<li class="form-line jf-required" data-type="control_textbox" id="id_4"><label class="form-label form-label-right form-label-auto" id="label_4" for="input_4" aria-hidden="false">SOL Wallet Address:<span class="form-required">*</span> </label>
+						<div id="cid_4" class="form-input jf-required" data-layout="half"> <input type="text" id="input_4" name="q4_ethWallet" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_4" required="" value="" /> </div>
+					</li>
+					<li class="form-line jf-required" data-type="control_fileupload" id="id_5"><label class="form-label form-label-right form-label-auto" id="label_5" for="input_5" aria-hidden="false"> Screenshot Dookie Rain with your highest score, post it to X &amp; submit screenshot here:<span class="form-required">*</span> </label>
+						<div id="cid_5" class="form-input jf-required" data-layout="full">
+						<div class="jfQuestion-fields" data-wrapper-react="true">
+							<div class="jfField isFilled">
+							<div class="jfUpload-wrapper">
+								<div class="jfUpload-container">
+								<div class="jfUpload-button-container">
+									<div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+									<div class="jfUpload-heading forMobile">Choose a file</div>
+									</div>
+								</div>
+								</div>
+								<div class="jfUpload-files-container">
+								<div class="validate[multipleUpload]"><input type="file" id="input_5" name="q5_screenshotYour[]" multiple="" class="form-upload-multiple validate[required]" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" required="" aria-label="Browse Files" /></div>
+								</div>
+							</div>
+							<div data-wrapper-react="true"></div>
+							</div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+						</div>
+						</div>
+					</li>
+					<li class="form-line jf-required" data-type="control_fileupload" id="id_6"><label class="form-label form-label-right form-label-auto" id="label_6" for="input_6" aria-hidden="false"> Turdtle Meme Submission:<span class="form-required">*</span> </label>
+						<div id="cid_6" class="form-input jf-required" data-layout="full">
+						<div class="jfQuestion-fields" data-wrapper-react="true">
+							<div class="jfField isFilled">
+							<div class="jfUpload-wrapper">
+								<div class="jfUpload-container">
+								<div class="jfUpload-button-container">
+									<div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+									<div class="jfUpload-heading forMobile">Choose a file</div>
+									</div>
+								</div>
+								</div>
+								<div class="jfUpload-files-container">
+								<div class="validate[multipleUpload]"><input type="file" id="input_6" name="q6_turdtleMeme[]" multiple="" class="form-upload-multiple validate[required]" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" required="" aria-label="Browse Files" /></div>
+								</div>
+							</div><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false">Extra points if you use our Meme Assets (in Activities)</label></span>
+							</div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+						</div>
+						</div>
+					</li>
+					<li class="form-line" data-type="control_button" id="id_2">
+						<div id="cid_2" class="form-input-wide" data-layout="full">
+						<div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+						</div>
+					</li>
+					<li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+					</ul>
+				</div>
+				<script>
+					JotForm.showJotFormPowered = "new_footer";
+				</script>
+				<script>
+					JotForm.poweredByText = "Powered by Jotform";
+				</script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="233311925904049" />
+				<script type="text/javascript">
+					var all_spc = document.querySelectorAll("form[id='233311925904049'] .si" + "mple" + "_spc");
+					for (var i = 0; i < all_spc.length; i++)
+					{
+					all_spc[i].value = "233311925904049-233311925904049";
+					}
+				</script>
+				</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.48134"></script>
+				<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.48134"></script>
+				<script type="text/javascript">JotForm.isNewSACL=true;</script>
+				
+			</div>
+		</div>
+
+		<div id="Files" class="tabcontent">
+			<div class="item-bar">
+				<h3>Files</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			
+			<div class="inside pooList">
+				<a href="https://www.subber.xyz/turdtles/giveaways/turdtles-shitlist"><img class="memeImg" src="./assets/poop2.png"/></a>
+			</div>
+		</div>
+
+		<div id="MakeVybrz" class="tabcontent">
+			<div class="item-bar">
+				<h3>????</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			
+			<div class="inside">
+				<section class="Vmaker">
+					<div>
+						<p>
+							What else could you possibly want from us?
+						</p>
+						<p>
+							We are just Turtles with shit for shells.
+						</p>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+		<div id="Gen" class="tabcontent">
+			<div class="item-bar">
+				<h3>Gen</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			
+			<section class="Genr">
+					<!-- Maker will go here -->
+					<!-- Gen will go here -->
+					<!-- Gen will go here -->
+					<!-- Maker will go here -->
+			</section>
+		</div>
+		
+		<div id="Challenges" class="tabcontent">
+			<div class="item-bar">
+				<h3>Challenges</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			<div class="games">
+				<h2>Dookie Rain</h2>
+				<ul>
+					<li>Use the start button to start the game.</li>
+					<li>Use the arrow keys to move left & right, 
+						<br>
+						or a finger if on mobile.</li>
+					<li>Miss 8 Dookie it's GAME OVER!</li>
+				</ul>
+				<section class="dookieRain">
+					<div id="gameArea">
+						<div id="catcher"></div>
+					</div>
+					<div id="gameInfo">
+					<button id="startButton">Start Game</button>
+					<div>Score: <span id="score">0</span></div>
+					<div> <span id="missed">Missed: 0</span></div>
+					<div> <span id="level">Level: 1</span></div>
+					</div>
+					<div id="levelMessage"></div> 
+					<script src="game.js"></script>
+					<script src="dookierain.js"></script>
+    			</section>
+			</div>
+			
+		</div>
+		
+		<div id="Activity-feed" class="tabcontent">
+			<div class="item-bar">
+				<h3>Activities</h3>
+				<span onclick="this.parentElement.parentElement.style.display='none'" class="topright">
+					X
+				</span>
+			</div>
+			<section class="coloring">
+				<div class="memeAssetts">
+					<h1>MEME Assets</h1>
+					<div>
+						<img class="memeImg" src="./assets/poop2.png"/>
+						<img class="memeImg" src=""/>
+						<img class="memeImg" src="./assets/Turdtle-copy.png"/>
+						<img class="memeImg" src=""/>
+					</div>
+				</div>
+				
+			</section>
+		</div>
+		
+	</section>
+	<script src="turdApp.js"></script>
+	<script src="https://cdn.interactjs.io/v1.10.11/interact.min.js"></script>
+</body>
+</html>
